@@ -1,0 +1,38 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# OpenAI Computer Using Agent (CUA) Sample App
+
+## Project Overview
+Sample application demonstrating how to build AI agents that can interact with computer interfaces by viewing screenshots and performing actions (click, type, scroll).
+
+## Key Files
+- `README.md` - Comprehensive project documentation
+- `cli.py` - Main entry point for running the app with different environments
+- `agent/agent.py` - Agent implementation that handles model interaction
+- `computers/computer.py` - Computer interface defining available actions
+- `simple_cua_loop.py` - Basic implementation of CUA loop
+
+## Key Commands
+```
+# Setup
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+
+# Run with local browser
+python cli.py --computer local-playwright
+
+# Run with other environments
+python cli.py --show --computer docker
+python cli.py --show --computer browserbase
+```
+
+## Project Structure
+- `agent/` - Agent implementation
+- `computers/` - Implementations for different computer environments
+- `examples/` - Sample use cases
+
+See README.md for detailed instructions on setup, implementation details, and safety considerations. 
