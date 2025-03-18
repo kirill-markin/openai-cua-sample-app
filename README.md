@@ -10,8 +10,8 @@ Get started building a [Computer Using Agent (CUA)](https://platform.openai.com/
 Set up python env and install dependencies.
 
 ```shell
-python3 -m venv env
-source env/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -20,6 +20,9 @@ Run CLI to let CUA use a local browser window, using [playwright](https://playwr
 ```shell
 python cli.py --computer local-playwright
 ```
+
+> [!NOTE]  
+> The first time you run this, if you haven't used Playwright before, you will be prompted to install dependencies. Execute the command suggested, which will depend on your OS.
 
 Other included sample [computer environments](#computer-environments):
 

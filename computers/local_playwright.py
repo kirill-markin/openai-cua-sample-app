@@ -16,7 +16,7 @@ class LocalPlaywrightComputer(BasePlaywrightComputer):
             chromium_sandbox=True,
             headless=self.headless,
             args=launch_args,
-            env={}
+            env={"DISPLAY": ":0"}
         )
         
         context = browser.new_context()
